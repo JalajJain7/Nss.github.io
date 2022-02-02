@@ -1,0 +1,93 @@
+.typep {
+    font-family: sans-serif;
+    
+    color: white;
+    /* background-image: linear-gradient(90deg, #a124e9, #2345db); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 1rem;
+  }
+
+
+
+
+.typeing {
+    animation: typing 7s steps(25) infinite alternate, Undo-typing 7s 7s steps(24),      blink 0.5s infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 24ch;
+    border-right: 2px solid;
+    font-family: lovelo,lato;
+    /*text-align: center;
+     */  ;
+    -webkit-animation: typing 7s steps(25) infinite alternate, Undo-typing 7s 7s steps(24),;
+}
+  .alt {
+    animation: typing 7s infinite alternate, Undo-typing 7s 7s,
+      blink 0.5s infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 24ch;
+    border-right: 5px solid;
+  }
+  .alt-2 {
+    animation: typing 7s steps(70) infinite alternate, Undo-typing 7s 7s steps(70),
+      blink 0.5s infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 24ch;
+    border-right: 5px solid;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 24ch;
+    }
+  }
+  @keyframes Undo-typing {
+    from {
+      width: 24ch;
+    }
+    to {
+      width: 0;
+    }
+  }
+  
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
+  
+  .fadeIn {
+    animation: fadeIn 1s;
+    animation-fill-mode: both;
+  }
+  
+  .wait-2s {
+    animation-delay: 2s;
+  }
+  
+  .wait-3s {
+    animation-delay: 3s;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @media (max-width: 768px) {
+    body {
+      background-image: linear-gradient(180deg, #04b4ff, #ec31cd);
+    }
+  }
+  
