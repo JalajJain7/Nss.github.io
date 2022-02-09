@@ -14,6 +14,10 @@
   --grey: #6E807A;
 }
 
+.lineHori{
+  display:none;
+}
+
 body {
   font-family: "Source Sans Pro", sans-serif;
   line-height: 1.5;
@@ -856,11 +860,25 @@ a.text-dark:hover, a.text-dark:focus {
   color: #A1AAA7;
 }
 
-.topbar .social-mini-button a:hover {
+.topbar .social-mini-button .facebook:hover {
   text-decoration: none;
-  color: #6E807A;
+  color: #3B5998;
 }
 
+.topbar .social-mini-button .twitter:hover {
+  text-decoration: none;
+  color:#1DA1F2;
+}
+
+.topbar .social-mini-button .youtube:hover {
+  text-decoration: none;
+  color: #FF0000;
+}
+
+.topbar .social-mini-button .instagram:hover {
+  text-decoration: none;
+  color: #C13584;
+}
 
 .btn {
   padding: 8px 24px;
@@ -920,7 +938,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
-  color: #6E807A;
+  color:#000000;
 }
 
 .navbar-light .navbar-nav .show > .nav-link,
@@ -933,6 +951,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 
 @media (min-width: 576px) {
+  
   .navbar-expand-sm .navbar-nav {
     margin-top: 0;
     border-top: none;
@@ -944,6 +963,8 @@ a.text-dark:hover, a.text-dark:focus {
   .navbar-expand-sm .navbar-nav {
     align-items: center;
   }
+
+  
 }
 
 @media (min-width: 768px) {
@@ -972,6 +993,10 @@ a.text-dark:hover, a.text-dark:focus {
   .navbar-expand-lg .navbar-nav {
     align-items: center;
   }
+
+  .lineHori{
+    display:contents;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -985,6 +1010,10 @@ a.text-dark:hover, a.text-dark:focus {
   }
   .navbar-expand-xl .navbar-nav {
     align-items: center;
+  }
+
+  .lineHori{
+    display:contents;
   }
 }
 
@@ -1179,6 +1208,7 @@ a.text-dark:hover, a.text-dark:focus {
   padding-top: 80px;
   padding-bottom: 80px;
   overflow: hidden;
+  /* background-color: #edf2fb; */
 }
 
 .page-hero {
@@ -1383,6 +1413,7 @@ a.text-dark:hover, a.text-dark:focus {
   border-radius: 4px;
   border: 1px solid #E5E5E5;
   overflow: hidden;
+  box-shadow: 5px 5px 30px grey;
 }
 
 .card-blog .header {
@@ -1768,7 +1799,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .footer-sosmed a:hover {
-  background-color: #00D9A5;
+  background-color: #000000;
   text-decoration: none;
 }
 
@@ -1826,4 +1857,24 @@ a.text-dark:hover, a.text-dark:focus {
   padding-right: 7px !important;
   padding-left: 14px !important;
   border-radius: 40px 0 0 40px;
+}
+
+
+
+.footer-sosmed :hover {
+  background-color: #000000;
+  text-decoration: none;
+}
+
+
+.carousel-control-next-icon {
+  width: 100px;
+  height: 100px;
+  
+}
+
+
+.carousel-control-prev-icon {
+  width: 100px;
+  height: 100px;
 }
