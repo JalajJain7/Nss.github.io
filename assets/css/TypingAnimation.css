@@ -2,7 +2,7 @@
     font-family: sans-serif;
     
     color: white;
-    /* background-image: linear-gradient(90deg, #a124e9, #2345db); */
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -87,7 +87,7 @@
   }
   @media (max-width: 768px) {
     body {
-      background-image: linear-gradient(180deg, #04b4ff, #ec31cd);
+      /* background-image: linear-gradient(180deg, #04b4ff, #ec31cd); */
     }
   }
   
